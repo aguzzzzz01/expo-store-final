@@ -86,10 +86,16 @@ export function ProductCard({ product }: { product: Product }) {
       {/* Image */}
       <div
         className={`relative aspect-square rounded-xl overflow-hidden mb-4 border border-border/20 ${
-          isPerfume
-            ? "bg-[radial-gradient(ellipse_at_center,_#ffffff_0%,_#f4efe6_60%,_#e8dfcd_100%)]"
-            : "bg-white"
+          isPerfume ? "" : "bg-white"
         }`}
+        style={
+          isPerfume
+            ? {
+                background:
+                  "radial-gradient(ellipse at center, #ffffff 0%, #f4efe6 60%, #e8dfcd 100%)",
+              }
+            : undefined
+        }
       >
         {isPerfume && (
           <>
