@@ -5,6 +5,12 @@ import { motion } from "motion/react";
 import { useCart } from "@/contexts/CartContext";
 
 const WHATSAPP_NUMBER = "5491138012403";
+const PERFUME_CATEGORIES = new Set([
+  "perfumes", "lattafa", "armaf", "afnan", "al-haramain", "al-wataniah",
+  "anfar-1950", "ard-al-zaafaran", "bharara", "emper", "escada",
+  "fragrance-world", "maison-alhambra", "orientica", "rasasi", "rayhaan",
+  "tubbees", "french-avenue", "victoria-secret",
+]);
 const waLink = (productName: string) => {
   const msg = `Hola David! Vi tu catálogo web. Me interesa: ${productName} - Código de seguimiento: EXPOSTORE`;
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
@@ -61,6 +67,7 @@ export function ProductCard({ product }: { product: Product }) {
 
   const optionsList = activeModel?.options ?? product.options;
   const colorsList = activeModel?.colors ?? null;
+  const isPerfume = PERFUME_CATEGORIES.has(product.category as string);
 
   return (
     <motion.div
@@ -77,7 +84,21 @@ export function ProductCard({ product }: { product: Product }) {
       )}
 
       {/* Image */}
-      <div className="relative aspect-square rounded-xl overflow-hidden mb-4 border border-border/20 bg-white">
+      <div
+        className={`relative aspect-square rounded-xl overflow-hidden mb-4 border border-border/20 ${
+          isPerfume
+            ? "bg-[radial-gradient(ellipse_at_center,_#ffffff_0%,_#f4efe6_60%,_#e8dfcd_100%)]"
+            : "bg-white"
+        }`}
+      >
+        {isPerfume && (
+          <>
+            {/* Subtle gold sheen from top */}
+            <div className="pointer-events-none absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-amber-100/40 to-transparent" />
+            {/* Soft elliptical shadow under the bottle */}
+            <div className="pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-[10%] h-3 w-3/5 rounded-[50%] bg-black/25 blur-md" />
+          </>
+        )}
         <img
           key={displayImage}
           src={displayImage}
@@ -85,9 +106,16 @@ export function ProductCard({ product }: { product: Product }) {
           loading="lazy"
           decoding="async"
           referrerPolicy="no-referrer"
-          className="relative h-full w-full object-cover scale-110 transition-transform duration-500 group-hover:scale-115"
+          style={isPerfume ? { imageRendering: "auto" as const } : undefined}
+          className={
+            isPerfume
+              ? "relative h-full w-full object-contain p-5 drop-shadow-[0_8px_12px_rgba(0,0,0,0.18)] transition-transform duration-500 group-hover:scale-105"
+              : "relative h-full w-full object-cover scale-110 transition-transform duration-500 group-hover:scale-115"
+          }
         />
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-black/10 to-transparent" />
+        {!isPerfume && (
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-black/10 to-transparent" />
+        )}
       </div>
 
 
