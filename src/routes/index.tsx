@@ -179,6 +179,7 @@ function Home() {
       : base.filter((p) => {
           const haystacks: string[] = [p.name, p.description ?? ""];
           if (p.variants) p.variants.forEach((v) => haystacks.push(v.name, v.colorName ?? ""));
+          if (p.sizeVariants) p.sizeVariants.forEach((s) => haystacks.push(s.name, s.size));
           if (p.models)
             p.models.forEach((m) => {
               haystacks.push(m.name, m.shortLabel ?? "");
