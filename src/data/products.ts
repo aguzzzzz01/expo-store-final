@@ -301,6 +301,9 @@ import ipm_pride_nebras_elixir_100ml from "../assets/images/perfumes_pdf2/pm_pri
 import ipm_pride_shaheen_gold_edp_100ml from "../assets/images/perfumes_pdf2/pm_pride_shaheen_gold_edp_100ml.jfif";
 import ipm_pride_shaheen_silver_edp_100ml from "../assets/images/perfumes_pdf2/pm_pride_shaheen_silver_edp_100ml.jfif";
 import ipm_pride_vintage_radio_edp_100ml from "../assets/images/perfumes_pdf2/pm_pride_vintage_radio_edp_100ml.webp";
+import iKitPridePourFemme from "../assets/images/nuevos/perfumes_v2/kit_pride_pour_femme_edp_100ml_sg_bl.png";
+import iKitPridePourHomme from "../assets/images/nuevos/perfumes_v2/kit_pride_pour_homme_edp_100ml_sg_as.png";
+import iKitTheoremePourFemme from "../assets/images/nuevos/perfumes_v2/kit_theoreme_pour_femme_edp_90ml_sg_bl.png";
 import ipm_qaaed_edp_100ml from "../assets/images/perfumes_pdf2/pm_qaaed_edp_100ml.webp";
 import ipm_qaed_al_fursan_edp_90ml from "../assets/images/perfumes_pdf2/pm_qaed_al_fursan_edp_90ml.jfif";
 import ipm_qaed_al_fursan_unlimited_90ml from "../assets/images/perfumes_pdf2/pm_qaed_al_fursan_unlimited_90ml.jfif";
@@ -3565,6 +3568,36 @@ export const PRODUCTS: Product[] = [
     image: ipm_pride_vintage_radio_edp_100ml,
     wholesale: true,
     description: "Perfume árabe original importado. Pride Vintage Radio EDP 100ml. Precio mayorista (mín. 4 unidades). Por unidad: +$5.000 ARS.",
+  },
+  {
+    id: "pm_kit_pride_pour_femme",
+    name: "Kit Pride Pour Femme EDP 100ml + S/G 100ml + B/L 100ml",
+    category: "lattafa",
+    price: "$75.000",
+    image: iKitPridePourFemme,
+    wholesale: true,
+    tag: "Kit",
+    description: "Kit Pride Pour Femme: Eau de Parfum 100ml + Shower Gel 100ml + Body Lotion 100ml. Set de regalo original importado. Precio mayorista (mín. 4 unidades). Por unidad: +$5.000 ARS.",
+  },
+  {
+    id: "pm_kit_pride_pour_homme",
+    name: "Kit Pride Pour Homme EDP 100ml + S/G 100ml + A/S 100ml",
+    category: "lattafa",
+    price: "$75.000",
+    image: iKitPridePourHomme,
+    wholesale: true,
+    tag: "Kit",
+    description: "Kit Pride Pour Homme: Eau de Parfum 100ml + Shower Gel 100ml + After Shave 100ml. Set de regalo original importado. Precio mayorista (mín. 4 unidades). Por unidad: +$5.000 ARS.",
+  },
+  {
+    id: "pm_kit_theoreme_pour_femme",
+    name: "Kit Theoreme Pour Femme EDP 90ml + S/G 100ml + B/L 100ml",
+    category: "lattafa",
+    price: "$78.000",
+    image: iKitTheoremePourFemme,
+    wholesale: true,
+    tag: "Kit",
+    description: "Kit Theoreme Pour Femme: Eau de Parfum 90ml + Shower Gel 100ml + Body Lotion 100ml. Set de regalo original importado. Precio mayorista (mín. 4 unidades). Por unidad: +$5.000 ARS.",
   },
   {
     id: "pm_qaaed_edp_100ml",
