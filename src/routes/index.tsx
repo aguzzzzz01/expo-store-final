@@ -146,6 +146,7 @@ function Home() {
   const getProductPriceValue = (p: (typeof PRODUCTS)[number]): number => {
     const candidates: (string | undefined)[] = [p.price];
     if (p.variants) p.variants.forEach((v) => candidates.push(v.price));
+    if (p.sizeVariants) p.sizeVariants.forEach((s) => candidates.push(s.price));
     if (p.models) p.models.forEach((m) => candidates.push(m.price));
     const values = candidates.map(getPriceValue).filter((n) => Number.isFinite(n));
     if (values.length === 0) return Number.POSITIVE_INFINITY;
