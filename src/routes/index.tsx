@@ -74,6 +74,11 @@ export type Category =
   | "tubbees"
   | "french-avenue"
   | "victoria-secret"
+  | "legacy-king"
+  | "paris-corner"
+  | "zakat"
+  | "zimaya"
+  | "thoq-al-hawamer"
   | "iphone"
   | "karssell"
   | "electro"
@@ -110,6 +115,11 @@ const PERFUME_BRANDS: { id: Category; label: string }[] = [
   { id: "french-avenue", label: "French Avenue" },
   { id: "victoria-secret", label: "Victoria's Secret" },
   { id: "tubbees", label: "Tubbees" },
+  { id: "legacy-king", label: "Legacy King" },
+  { id: "paris-corner", label: "Paris Corner" },
+  { id: "zakat", label: "Zakat" },
+  { id: "zimaya", label: "Zimaya" },
+  { id: "thoq-al-hawamer", label: "Thoq Al Hawamer" },
 ];
 
 
@@ -136,6 +146,7 @@ function Home() {
   const getProductPriceValue = (p: (typeof PRODUCTS)[number]): number => {
     const candidates: (string | undefined)[] = [p.price];
     if (p.variants) p.variants.forEach((v) => candidates.push(v.price));
+    if (p.sizeVariants) p.sizeVariants.forEach((s) => candidates.push(s.price));
     if (p.models) p.models.forEach((m) => candidates.push(m.price));
     const values = candidates.map(getPriceValue).filter((n) => Number.isFinite(n));
     if (values.length === 0) return Number.POSITIVE_INFINITY;
@@ -169,6 +180,7 @@ function Home() {
       : base.filter((p) => {
           const haystacks: string[] = [p.name, p.description ?? ""];
           if (p.variants) p.variants.forEach((v) => haystacks.push(v.name, v.colorName ?? ""));
+          if (p.sizeVariants) p.sizeVariants.forEach((s) => haystacks.push(s.name, s.size));
           if (p.models)
             p.models.forEach((m) => {
               haystacks.push(m.name, m.shortLabel ?? "");

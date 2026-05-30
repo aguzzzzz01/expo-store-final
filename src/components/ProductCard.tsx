@@ -10,6 +10,7 @@ const PERFUME_CATEGORIES = new Set([
   "anfar-1950", "ard-al-zaafaran", "bharara", "emper", "escada",
   "fragrance-world", "maison-alhambra", "orientica", "rasasi", "rayhaan",
   "tubbees", "french-avenue", "victoria-secret",
+  "legacy-king", "paris-corner", "zakat", "zimaya", "thoq-al-hawamer",
 ]);
 const waLink = (productName: string) => {
   const msg = `Hola David! Vi tu catálogo web. Me interesa: ${productName} - Código de seguimiento: EXPOSTORE`;
@@ -19,10 +20,12 @@ const waLink = (productName: string) => {
 export function ProductCard({ product }: { product: Product }) {
   const hasModels = !!product.models && product.models.length > 0;
   const hasVariants = !hasModels && !!product.variants && product.variants.length > 0;
+  const hasSizes = !hasModels && !hasVariants && !!product.sizeVariants && product.sizeVariants.length > 0;
 
   // Indices for nested selection
   const [modelIdx, setModelIdx] = useState(0);
   const [variantIdx, setVariantIdx] = useState(0); // color selector for non-model products
+  const [sizeIdx, setSizeIdx] = useState(0);
   const [modelColorIdx, setModelColorIdx] = useState(0); // color selector inside a model
   const [isExpanded, setIsExpanded] = useState(false);
   const [justAdded, setJustAdded] = useState(false);
@@ -34,20 +37,23 @@ export function ProductCard({ product }: { product: Product }) {
   const displayName = useMemo(() => {
     if (activeModel) return activeModel.name;
     if (hasVariants) return product.variants![variantIdx].name;
+    if (hasSizes) return product.sizeVariants![sizeIdx].name;
     return product.name;
-  }, [activeModel, hasVariants, variantIdx, product, modelIdx]);
+  }, [activeModel, hasVariants, variantIdx, hasSizes, sizeIdx, product, modelIdx]);
 
   const displayDesc = useMemo(() => {
     if (activeModel) return activeModel.description;
     if (hasVariants) return product.variants![variantIdx].description;
+    if (hasSizes) return product.sizeVariants![sizeIdx].description;
     return product.description;
-  }, [activeModel, hasVariants, variantIdx, product, modelIdx]);
+  }, [activeModel, hasVariants, variantIdx, hasSizes, sizeIdx, product, modelIdx]);
 
   const displayTag = useMemo(() => {
     if (activeModel) return activeModel.tag;
     if (hasVariants) return product.variants![variantIdx].tag || product.tag;
+    if (hasSizes) return product.sizeVariants![sizeIdx].tag || product.tag;
     return product.tag;
-  }, [activeModel, hasVariants, variantIdx, product, modelIdx]);
+  }, [activeModel, hasVariants, variantIdx, hasSizes, sizeIdx, product, modelIdx]);
 
   const displayImage = useMemo(() => {
     if (activeModel) {
@@ -56,14 +62,16 @@ export function ProductCard({ product }: { product: Product }) {
       return activeModel.image;
     }
     if (hasVariants) return product.variants![variantIdx].image;
+    if (hasSizes) return product.sizeVariants![sizeIdx].image;
     return product.image;
-  }, [activeModel, modelColorIdx, hasVariants, variantIdx, product]);
+  }, [activeModel, modelColorIdx, hasVariants, variantIdx, hasSizes, sizeIdx, product]);
 
   const displayPrice = useMemo(() => {
     if (activeModel) return activeModel.price;
     if (hasVariants) return product.variants![variantIdx].price;
+    if (hasSizes) return product.sizeVariants![sizeIdx].price;
     return product.price || "Contactar";
-  }, [activeModel, hasVariants, variantIdx, product, modelIdx]);
+  }, [activeModel, hasVariants, variantIdx, hasSizes, sizeIdx, product, modelIdx]);
 
   const optionsList = activeModel?.options ?? product.options;
   const colorsList = activeModel?.colors ?? null;
@@ -232,6 +240,34 @@ export function ProductCard({ product }: { product: Product }) {
           </div>
         )}
 
+        {/* Size selector (ML variants) */}
+        {hasSizes && (
+          <div className="mt-4 space-y-1.5 border-t border-border/20 pt-3">
+            <div className="text-[10px] uppercase tracking-widest font-black text-gold/80">
+              Elegir Tamaño:
+            </div>
+            <div className="flex flex-wrap gap-1.5">
+              {product.sizeVariants!.map((s, idx) => {
+                const isSelected = sizeIdx === idx;
+                return (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => setSizeIdx(idx)}
+                    className={`px-2.5 py-1 rounded-md text-[10px] font-black tracking-wider uppercase transition-all border ${
+                      isSelected
+                        ? "bg-gradient-gold text-primary-foreground border-gold shadow-sm"
+                        : "bg-black/20 text-muted-foreground border-border/40 hover:border-gold/40 hover:text-foreground"
+                    }`}
+                  >
+                    {s.size}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
         {/* Color selector inside the active model (iPhone colors) */}
         {hasModels && colorsList && colorsList.length > 0 && (
           <div className="mt-3 space-y-1.5">
@@ -323,7 +359,7 @@ export function ProductCard({ product }: { product: Product }) {
             <button
               type="button"
               onClick={() => {
-                const cartId = `${product.id}::${hasModels ? activeModel?.id ?? modelIdx : ""}::${hasVariants ? variantIdx : ""}::${hasModels ? modelColorIdx : ""}`;
+                const cartId = `${product.id}::${hasModels ? activeModel?.id ?? modelIdx : ""}::${hasVariants ? variantIdx : ""}::${hasSizes ? sizeIdx : ""}::${hasModels ? modelColorIdx : ""}`;
                 addItem({
                   id: cartId,
                   name: displayName,
