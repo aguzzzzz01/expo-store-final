@@ -359,7 +359,7 @@ export function ProductCard({ product }: { product: Product }) {
             <button
               type="button"
               onClick={() => {
-                const cartId = `${product.id}::${hasModels ? activeModel?.id ?? modelIdx : ""}::${hasVariants ? variantIdx : ""}::${hasModels ? modelColorIdx : ""}`;
+                const cartId = `${product.id}::${hasModels ? activeModel?.id ?? modelIdx : ""}::${hasVariants ? variantIdx : ""}::${hasSizes ? sizeIdx : ""}::${hasModels ? modelColorIdx : ""}`;
                 addItem({
                   id: cartId,
                   name: displayName,
