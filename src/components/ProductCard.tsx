@@ -240,6 +240,34 @@ export function ProductCard({ product }: { product: Product }) {
           </div>
         )}
 
+        {/* Size selector (ML variants) */}
+        {hasSizes && (
+          <div className="mt-4 space-y-1.5 border-t border-border/20 pt-3">
+            <div className="text-[10px] uppercase tracking-widest font-black text-gold/80">
+              Elegir Tamaño:
+            </div>
+            <div className="flex flex-wrap gap-1.5">
+              {product.sizeVariants!.map((s, idx) => {
+                const isSelected = sizeIdx === idx;
+                return (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => setSizeIdx(idx)}
+                    className={`px-2.5 py-1 rounded-md text-[10px] font-black tracking-wider uppercase transition-all border ${
+                      isSelected
+                        ? "bg-gradient-gold text-primary-foreground border-gold shadow-sm"
+                        : "bg-black/20 text-muted-foreground border-border/40 hover:border-gold/40 hover:text-foreground"
+                    }`}
+                  >
+                    {s.size}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
         {/* Color selector inside the active model (iPhone colors) */}
         {hasModels && colorsList && colorsList.length > 0 && (
           <div className="mt-3 space-y-1.5">
