@@ -74,6 +74,11 @@ export type Category =
   | "tubbees"
   | "french-avenue"
   | "victoria-secret"
+  | "legacy-king"
+  | "paris-corner"
+  | "zakat"
+  | "zimaya"
+  | "thoq-al-hawamer"
   | "iphone"
   | "karssell"
   | "electro"
@@ -110,6 +115,11 @@ const PERFUME_BRANDS: { id: Category; label: string }[] = [
   { id: "french-avenue", label: "French Avenue" },
   { id: "victoria-secret", label: "Victoria's Secret" },
   { id: "tubbees", label: "Tubbees" },
+  { id: "legacy-king", label: "Legacy King" },
+  { id: "paris-corner", label: "Paris Corner" },
+  { id: "zakat", label: "Zakat" },
+  { id: "zimaya", label: "Zimaya" },
+  { id: "thoq-al-hawamer", label: "Thoq Al Hawamer" },
 ];
 
 
