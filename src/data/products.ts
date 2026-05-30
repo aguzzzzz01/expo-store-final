@@ -301,6 +301,9 @@ import ipm_pride_nebras_elixir_100ml from "../assets/images/perfumes_pdf2/pm_pri
 import ipm_pride_shaheen_gold_edp_100ml from "../assets/images/perfumes_pdf2/pm_pride_shaheen_gold_edp_100ml.jfif";
 import ipm_pride_shaheen_silver_edp_100ml from "../assets/images/perfumes_pdf2/pm_pride_shaheen_silver_edp_100ml.jfif";
 import ipm_pride_vintage_radio_edp_100ml from "../assets/images/perfumes_pdf2/pm_pride_vintage_radio_edp_100ml.webp";
+import iKitPridePourFemme from "../assets/images/nuevos/perfumes_v2/kit_pride_pour_femme_edp_100ml_sg_bl.png";
+import iKitPridePourHomme from "../assets/images/nuevos/perfumes_v2/kit_pride_pour_homme_edp_100ml_sg_as.png";
+import iKitTheoremePourFemme from "../assets/images/nuevos/perfumes_v2/kit_theoreme_pour_femme_edp_90ml_sg_bl.png";
 import ipm_qaaed_edp_100ml from "../assets/images/perfumes_pdf2/pm_qaaed_edp_100ml.webp";
 import ipm_qaed_al_fursan_edp_90ml from "../assets/images/perfumes_pdf2/pm_qaed_al_fursan_edp_90ml.jfif";
 import ipm_qaed_al_fursan_unlimited_90ml from "../assets/images/perfumes_pdf2/pm_qaed_al_fursan_unlimited_90ml.jfif";
