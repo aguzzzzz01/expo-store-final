@@ -12,8 +12,10 @@ const PERFUME_CATEGORIES = new Set([
   "tubbees", "french-avenue", "victoria-secret",
   "legacy-king", "paris-corner", "zakat", "zimaya", "thoq-al-hawamer",
 ]);
-const waLink = (productName: string) => {
-  const msg = `Hola David! Vi tu catálogo web. Me interesa: ${productName} - Código de seguimiento: EXPOSTORE`;
+const waLink = (productName: string, details?: string[]) => {
+  const extras = (details ?? []).filter(Boolean);
+  const detailsTxt = extras.length ? ` (${extras.join(" · ")})` : "";
+  const msg = `Hola David! Vi tu catálogo web. Me interesa: ${productName}${detailsTxt} - Código de seguimiento: EXPOSTORE`;
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
 };
 
@@ -390,7 +392,12 @@ export function ProductCard({ product }: { product: Product }) {
               <span>Ver carrito</span>
             </button>
             <a
-              href={waLink(displayName)}
+              href={waLink(displayName, [
+                hasVariants ? `Color: ${product.variants![variantIdx].colorName}` : "",
+                hasModels && colorsList && colorsList.length > 0 ? `Color: ${colorsList[modelColorIdx].name}` : "",
+                hasSizes ? `Tamaño: ${product.sizeVariants![sizeIdx].size}` : "",
+                `Precio: ${displayPrice}`,
+              ])}
               target="_blank"
               rel="noopener noreferrer"
               className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2 text-xs font-black uppercase tracking-wider rounded-xl bg-whatsapp text-whatsapp-foreground shadow-glow hover:scale-105 active:scale-95 transition-all duration-300"
