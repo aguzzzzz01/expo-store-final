@@ -95,23 +95,21 @@ export function ProductCard({ product }: { product: Product }) {
 
       {/* Image */}
       <div
-        className={`relative aspect-square rounded-xl overflow-hidden mb-4 border border-border/20 ${
-          isPerfume ? "" : "bg-white"
-        }`}
-        style={
-          isPerfume
-            ? {
-                background:
-                  "radial-gradient(ellipse at center, #ffffff 0%, #f4efe6 60%, #e8dfcd 100%)",
-              }
-            : undefined
-        }
+        className="relative aspect-square rounded-xl overflow-hidden mb-4 border border-border/20 bg-black/10"
       >
+        {/* Blurred background fill: same image scaled up + blurred so the square has no empty space */}
+        <img
+          src={displayImage}
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          decoding="async"
+          referrerPolicy="no-referrer"
+          className="absolute inset-0 h-full w-full object-cover scale-125 blur-2xl opacity-70"
+        />
         {isPerfume && (
           <>
-            {/* Subtle gold sheen from top */}
-            <div className="pointer-events-none absolute inset-x-0 top-0 h-1/3 bg-gradient-to-b from-amber-100/40 to-transparent" />
-            {/* Soft elliptical shadow under the bottle */}
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-amber-100/20 via-transparent to-black/20" />
             <div className="pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-[10%] h-3 w-3/5 rounded-[50%] bg-black/25 blur-md" />
           </>
         )}
@@ -122,16 +120,8 @@ export function ProductCard({ product }: { product: Product }) {
           loading="lazy"
           decoding="async"
           referrerPolicy="no-referrer"
-          style={isPerfume ? { imageRendering: "auto" as const } : undefined}
-          className={
-            isPerfume
-              ? "relative h-full w-full object-contain p-5 drop-shadow-[0_8px_12px_rgba(0,0,0,0.18)] transition-transform duration-500 group-hover:scale-105"
-              : "relative h-full w-full object-cover scale-110 transition-transform duration-500 group-hover:scale-115"
-          }
+          className="relative h-full w-full object-contain p-3 drop-shadow-[0_8px_12px_rgba(0,0,0,0.25)] transition-transform duration-500 group-hover:scale-105"
         />
-        {!isPerfume && (
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-t from-black/10 to-transparent" />
-        )}
       </div>
 
 
