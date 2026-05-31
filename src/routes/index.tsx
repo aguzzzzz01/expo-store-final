@@ -1047,17 +1047,6 @@ function Home() {
       </AnimatePresence>
 
       {/* Smooth Floating WhatsApp Button */}
-      <motion.a
-        whileHover={{ scale: 1.15 }}
-        whileTap={{ scale: 0.9 }}
-        href={waLink("Consulta rápida")}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="WhatsApp"
-        className="fixed bottom-5 right-5 z-50 size-14 rounded-full bg-whatsapp grid place-items-center text-whatsapp-foreground shadow-glow shadow-green-500/20 hover:shadow-green-500/40 transition-shadow duration-300"
-      >
-        <MessageCircle className="size-7 animate-pulse" />
-      </motion.a>
     </div>
   );
 }
