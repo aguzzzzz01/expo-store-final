@@ -362,9 +362,15 @@ export function ProductCard({ product }: { product: Product }) {
               type="button"
               onClick={() => {
                 const cartId = `${product.id}::${hasModels ? activeModel?.id ?? modelIdx : ""}::${hasVariants ? variantIdx : ""}::${hasSizes ? sizeIdx : ""}::${hasModels ? modelColorIdx : ""}`;
+                const detailParts = [
+                  hasVariants ? `Color: ${product.variants![variantIdx].colorName}` : "",
+                  hasModels && colorsList && colorsList.length > 0 ? `Color: ${colorsList[modelColorIdx].name}` : "",
+                  hasSizes ? `Tamaño: ${product.sizeVariants![sizeIdx].size}` : "",
+                ].filter(Boolean);
+                const cartName = detailParts.length ? `${displayName} (${detailParts.join(" · ")})` : displayName;
                 addItem({
                   id: cartId,
-                  name: displayName,
+                  name: cartName,
                   image: displayImage,
                   price: typeof displayPrice === "string" ? displayPrice : String(displayPrice),
                 });
