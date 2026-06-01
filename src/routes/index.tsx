@@ -96,7 +96,7 @@ const MAIN_CATEGORIES: { id: Category; label: string; sub: string; Icon: typeof 
   { id: "combos", label: "Combos", sub: "Ahorro total", Icon: Package },
 ];
 
-const ALL_PERFUME_BRANDS: { id: Category; label: string }[] = [
+const PERFUME_BRANDS: { id: Category; label: string }[] = [
   { id: "lattafa", label: "Lattafa" },
   { id: "al-haramain", label: "Al Haramain" },
   { id: "rayhaan", label: "Rayhaan" },
@@ -121,13 +121,6 @@ const ALL_PERFUME_BRANDS: { id: Category; label: string }[] = [
   { id: "zimaya", label: "Zimaya" },
   { id: "thoq-al-hawamer", label: "Thoq Al Hawamer" },
 ];
-
-// Solo mostramos las marcas que tienen al menos un producto cargado,
-// así nunca aparece un filtro de marca con "0 resultados".
-const PERFUME_BRAND_IDS_WITH_PRODUCTS = new Set(PRODUCTS.map((p) => p.category));
-const PERFUME_BRANDS = ALL_PERFUME_BRANDS.filter((b) =>
-  PERFUME_BRAND_IDS_WITH_PRODUCTS.has(b.id),
-);
 
 
 
