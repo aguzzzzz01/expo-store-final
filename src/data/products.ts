@@ -4825,7 +4825,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_maison_alhambra_arte_bellissimo_dark_desire_edp_75ml",
     name: "Arte Bellissimo Dark Desire EDP 75ML",
-    category: "maison-alhambra",
+    category: "orientica",
     price: "$95.000",
     image: i_maison_alhambra_arte_bellissimo_dark_desire_edp_75ml,
     description: "Fragancia importada Orientica · 75ML. Lista de mayorista.",
@@ -4835,7 +4835,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_maison_alhambra_arte_bellissimo_exotic_edp_75ml",
     name: "Arte Bellissimo Exotic EDP 75ML",
-    category: "maison-alhambra",
+    category: "orientica",
     price: "$95.000",
     image: i_maison_alhambra_arte_bellissimo_exotic_edp_75ml,
     description: "Fragancia importada Orientica · 75ML. Lista de mayorista.",
@@ -4845,7 +4845,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_maison_alhambra_arte_bellissimo_romantic_edp_75ml",
     name: "Arte Bellissimo Romantic EDP 75ML",
-    category: "maison-alhambra",
+    category: "orientica",
     price: "$95.000",
     image: i_maison_alhambra_arte_bellissimo_romantic_edp_75ml,
     description: "Fragancia importada Orientica · 75ML. Lista de mayorista.",
@@ -4855,7 +4855,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_maison_alhambra_exclusive_azure_fantasy_extrait_de_parfum_80ml",
     name: "Exclusive Azure Fantasy Extrait De Parfum 80ML",
-    category: "maison-alhambra",
+    category: "orientica",
     price: "$105.000",
     image: i_maison_alhambra_exclusive_azure_fantasy_extrait_de_parfum_80ml,
     description: "Fragancia importada Orientica · 80ML. Lista de mayorista.",
@@ -4865,7 +4865,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_maison_alhambra_exclusive_dania_extrait_de_parfum_80ml",
     name: "Exclusive Dania Extrait De Parfum 80ML",
-    category: "maison-alhambra",
+    category: "orientica",
     price: "$110.000",
     image: i_maison_alhambra_exclusive_dania_extrait_de_parfum_80ml,
     description: "Fragancia importada Orientica · 80ML. Lista de mayorista.",
@@ -4875,7 +4875,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_maison_alhambra_kit_luxury_collection_velvet_gold_4_pcs",
     name: "Kit Luxury Collection Velvet Gold (4 PCS)",
-    category: "maison-alhambra",
+    category: "orientica",
     price: "$95.000",
     image: i_maison_alhambra_kit_luxury_collection_velvet_gold_4_pcs,
     description: "Fragancia importada Orientica · Edición especial. Lista de mayorista.",
@@ -4885,7 +4885,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_maison_alhambra_luxury_collection_amber_noir_edp_80ml",
     name: "Luxury Collection Amber Noir EDP 80ML",
-    category: "maison-alhambra",
+    category: "orientica",
     price: "$85.000",
     image: i_maison_alhambra_luxury_collection_amber_noir_edp_80ml,
     description: "Fragancia importada Orientica · 80ML. Lista de mayorista.",
@@ -4895,7 +4895,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_maison_alhambra_luxury_collection_oud_saffron_edp_80ml",
     name: "Luxury Collection Oud Saffron EDP 80ML",
-    category: "maison-alhambra",
+    category: "orientica",
     price: "$84.000",
     image: i_maison_alhambra_luxury_collection_oud_saffron_edp_80ml,
     description: "Fragancia importada Orientica · 80ML. Lista de mayorista.",
@@ -4905,7 +4905,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_maison_alhambra_luxury_collection_rose_eclat_edp_80ml",
     name: "Luxury Collection Rose Eclat EDP 80ML",
-    category: "maison-alhambra",
+    category: "orientica",
     price: "$99.000",
     image: i_maison_alhambra_luxury_collection_rose_eclat_edp_80ml,
     description: "Fragancia importada Orientica · 80ML. Lista de mayorista.",
@@ -4915,7 +4915,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_maison_alhambra_luxury_collection_royal_amber_gold_edp_80ml",
     name: "Luxury Collection Royal Amber (Gold) EDP 80ML",
-    category: "maison-alhambra",
+    category: "orientica",
     price: "$95.000",
     image: i_maison_alhambra_luxury_collection_royal_amber_gold_edp_80ml,
     description: "Fragancia importada Orientica · 80ML. Lista de mayorista.",
@@ -4925,7 +4925,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_maison_alhambra_luxury_collection_royal_bleu_edp_80ml",
     name: "Luxury Collection Royal Bleu EDP 80ML",
-    category: "maison-alhambra",
+    category: "orientica",
     price: "$95.000",
     image: i_maison_alhambra_luxury_collection_royal_bleu_edp_80ml,
     description: "Fragancia importada Orientica · 80ML. Lista de mayorista.",
@@ -4935,7 +4935,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_maison_alhambra_luxury_collection_velvet_gold_edp_80ml",
     name: "Luxury Collection Velvet Gold EDP 80ML",
-    category: "maison-alhambra",
+    category: "orientica",
     price: "$95.000",
     image: i_maison_alhambra_luxury_collection_velvet_gold_edp_80ml,
     description: "Fragancia importada Orientica · 80ML. Lista de mayorista.",
@@ -4945,7 +4945,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_maison_alhambra_luxury_desert_dusk_edp_80ml",
     name: "Luxury Desert Dusk EDP 80ML",
-    category: "maison-alhambra",
+    category: "orientica",
     price: "$105.000",
     image: i_maison_alhambra_luxury_desert_dusk_edp_80ml,
     description: "Fragancia importada Orientica · 80ML. Lista de mayorista.",
@@ -4955,7 +4955,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_maison_alhambra_royal_collection_victory_edp_80ml",
     name: "Royal Collection Victory EDP 80ML",
-    category: "maison-alhambra",
+    category: "orientica",
     price: "$105.000",
     image: i_maison_alhambra_royal_collection_victory_edp_80ml,
     description: "Fragancia importada Orientica · 80ML. Lista de mayorista.",
@@ -5045,7 +5045,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_paris_corner_hawas_black_edp_100ml",
     name: "Hawas Black EDP 100ML",
-    category: "paris-corner",
+    category: "rasasi",
     price: "$59.000",
     image: i_paris_corner_hawas_black_edp_100ml,
     description: "Fragancia importada Rasasi · 100ML. Lista de mayorista.",
@@ -5055,7 +5055,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_paris_corner_hawas_eclat_edp_100ml",
     name: "Hawas Eclat EDP 100ML",
-    category: "paris-corner",
+    category: "rasasi",
     price: "$59.000",
     image: i_paris_corner_hawas_eclat_edp_100ml,
     description: "Fragancia importada Rasasi · 100ML. Lista de mayorista.",
@@ -5065,7 +5065,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_paris_corner_hawas_for_her_gold_edp_100ml",
     name: "Hawas For Her (Gold) EDP 100ML",
-    category: "paris-corner",
+    category: "rasasi",
     price: "$49.000",
     image: i_paris_corner_hawas_for_her_gold_edp_100ml,
     description: "Fragancia importada Rasasi · 100ML. Lista de mayorista.",
@@ -5205,7 +5205,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_beary_love_edp_50ml",
     name: "Beary Love EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_beary_love_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5215,7 +5215,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_berry_blast_edp_50ml",
     name: "Berry Blast EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_berry_blast_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5225,7 +5225,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_bubble_gum_edp_50ml",
     name: "Bubble Gum EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_bubble_gum_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5235,7 +5235,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_candy_pop_edp_50ml",
     name: "Candy Pop EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_candy_pop_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5245,7 +5245,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_cherry_luxe_edp_50ml",
     name: "Cherry Luxe EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_cherry_luxe_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5255,7 +5255,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_chocolate_fudge_edp_50ml",
     name: "Chocolate Fudge EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_chocolate_fudge_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5265,7 +5265,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_cookies_cream_edp_50ml",
     name: "Cookies & Cream EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_cookies_cream_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5275,7 +5275,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_cotton_candy_edp_50ml",
     name: "Cotton Candy EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_cotton_candy_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5285,7 +5285,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_dreamy_treats_edp_50ml",
     name: "Dreamy Treats EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_dreamy_treats_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5295,7 +5295,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_lychee_lush_edp_50ml",
     name: "Lychee Lush EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_lychee_lush_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5305,7 +5305,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_pacificrim_edp_50ml",
     name: "Pacificrim EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_pacificrim_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5315,7 +5315,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_pink_sugar_edp_50ml",
     name: "Pink Sugar EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_pink_sugar_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5325,7 +5325,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_pistachio_kunafa_edp_50ml",
     name: "Pistachio Kunafa EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_pistachio_kunafa_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5335,7 +5335,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_sandbox_edp_50ml",
     name: "Sandbox EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_sandbox_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5345,7 +5345,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_strawberry_cheesecake_edp_50ml",
     name: "Strawberry Cheesecake EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_strawberry_cheesecake_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5355,7 +5355,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_sunburst_edp_50ml",
     name: "Sunburst EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_sunburst_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5365,7 +5365,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_sweet_caramel_edp_50ml",
     name: "Sweet Caramel EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_sweet_caramel_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5375,7 +5375,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_titans_splash_edp_50ml",
     name: "Titans Splash EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_titans_splash_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5385,7 +5385,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_tropical_island_edp_50ml",
     name: "Tropical Island EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_tropical_island_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5395,7 +5395,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_unicorn_vanilla_edp_50ml",
     name: "Unicorn Vanilla EDP 50ML",
-    category: "thoq-al-hawamer",
+    category: "tubbees",
     price: "$32.000",
     image: i_thoq_al_hawamer_unicorn_vanilla_edp_50ml,
     description: "Fragancia importada Tubbees · 50ML. Lista de mayorista.",
@@ -5405,7 +5405,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_ahlaam_rose_edp_100ml",
     name: "Ahlaam Rose EDP 100ML",
-    category: "thoq-al-hawamer",
+    category: "zakat",
     price: "$54.000",
     image: i_thoq_al_hawamer_ahlaam_rose_edp_100ml,
     description: "Fragancia importada Zakat · 100ML. Lista de mayorista.",
@@ -5415,7 +5415,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_al_qamar_edp_100ml",
     name: "Al Qamar EDP 100ML",
-    category: "thoq-al-hawamer",
+    category: "zakat",
     price: "$54.000",
     image: i_thoq_al_hawamer_al_qamar_edp_100ml,
     description: "Fragancia importada Zakat · 100ML. Lista de mayorista.",
@@ -5425,7 +5425,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_avitor_ibrahim_edp_100ml",
     name: "Avitor Ibrahim EDP 100ML",
-    category: "thoq-al-hawamer",
+    category: "zakat",
     price: "$48.000",
     image: i_thoq_al_hawamer_avitor_ibrahim_edp_100ml,
     description: "Fragancia importada Zakat · 100ML. Lista de mayorista.",
@@ -5435,7 +5435,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_crystal_aurum_edp_115ml",
     name: "Crystal Aurum EDP 115ML",
-    category: "thoq-al-hawamer",
+    category: "zakat",
     price: "$48.000",
     image: i_thoq_al_hawamer_crystal_aurum_edp_115ml,
     description: "Fragancia importada Zakat · 115ML. Lista de mayorista.",
@@ -5445,7 +5445,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_delicious_xtrait_de_parfum_100ml",
     name: "Delicious Xtrait De Parfum 100ML",
-    category: "thoq-al-hawamer",
+    category: "zakat",
     price: "$48.000",
     image: i_thoq_al_hawamer_delicious_xtrait_de_parfum_100ml,
     description: "Fragancia importada Zakat · 100ML. Lista de mayorista.",
@@ -5465,7 +5465,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_lailath_al_nujoom_star_edp_100ml",
     name: "Lailath Al Nujoom Star EDP 100ML",
-    category: "thoq-al-hawamer",
+    category: "zakat",
     price: "$48.000",
     image: i_thoq_al_hawamer_lailath_al_nujoom_star_edp_100ml,
     description: "Fragancia importada Zakat · 100ML. Lista de mayorista.",
@@ -5475,7 +5475,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_le_gemme_rosy_edp_115ml",
     name: "Le Gemme Rosy EDP 115ML",
-    category: "thoq-al-hawamer",
+    category: "zakat",
     price: "$48.000",
     image: i_thoq_al_hawamer_le_gemme_rosy_edp_115ml,
     description: "Fragancia importada Zakat · 115ML. Lista de mayorista.",
@@ -5495,7 +5495,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_roar_tiger_eye_edp_100ml",
     name: "Roar Tiger Eye EDP 100ML",
-    category: "thoq-al-hawamer",
+    category: "zakat",
     price: "$57.000",
     image: i_thoq_al_hawamer_roar_tiger_eye_edp_100ml,
     description: "Fragancia importada Zakat · 100ML. Lista de mayorista.",
@@ -5505,7 +5505,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_secret_of_ar_violet_edp_100ml",
     name: "Secret Of Ar. Violet EDP 100ML",
-    category: "thoq-al-hawamer",
+    category: "zakat",
     price: "$55.000",
     image: i_thoq_al_hawamer_secret_of_ar_violet_edp_100ml,
     description: "Fragancia importada Zakat · 100ML. Lista de mayorista.",
@@ -5515,7 +5515,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_turbo_boost_edp_100ml",
     name: "Turbo Boost EDP 100ML",
-    category: "thoq-al-hawamer",
+    category: "zakat",
     price: "$55.000",
     image: i_thoq_al_hawamer_turbo_boost_edp_100ml,
     description: "Fragancia importada Zakat · 100ML. Lista de mayorista.",
@@ -5525,7 +5525,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_turbo_fast_furious_edp_100ml",
     name: "Turbo Fast&Furious EDP 100ML",
-    category: "thoq-al-hawamer",
+    category: "zakat",
     price: "$55.000",
     image: i_thoq_al_hawamer_turbo_fast_furious_edp_100ml,
     description: "Fragancia importada Zakat · 100ML. Lista de mayorista.",
@@ -5535,7 +5535,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_turbo_final_lap_edp_100ml",
     name: "Turbo Final Lap EDP 100ML",
-    category: "thoq-al-hawamer",
+    category: "zakat",
     price: "$55.000",
     image: i_thoq_al_hawamer_turbo_final_lap_edp_100ml,
     description: "Fragancia importada Zakat · 100ML. Lista de mayorista.",
@@ -5545,7 +5545,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_turbo_gts_edp_100ml",
     name: "Turbo Gts EDP 100ML",
-    category: "thoq-al-hawamer",
+    category: "zakat",
     price: "$55.000",
     image: i_thoq_al_hawamer_turbo_gts_edp_100ml,
     description: "Fragancia importada Zakat · 100ML. Lista de mayorista.",
@@ -5555,7 +5555,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_turbo_speedway_edp_100ml",
     name: "Turbo Speedway EDP 100ML",
-    category: "thoq-al-hawamer",
+    category: "zakat",
     price: "$55.000",
     image: i_thoq_al_hawamer_turbo_speedway_edp_100ml,
     description: "Fragancia importada Zakat · 100ML. Lista de mayorista.",
@@ -5565,7 +5565,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_turbo_sport_edp_100ml",
     name: "Turbo Sport EDP 100ML",
-    category: "thoq-al-hawamer",
+    category: "zakat",
     price: "$55.000",
     image: i_thoq_al_hawamer_turbo_sport_edp_100ml,
     description: "Fragancia importada Zakat · 100ML. Lista de mayorista.",
@@ -5575,7 +5575,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_turbo_super_charge_edp_100ml",
     name: "Turbo Super Charge EDP 100ML",
-    category: "thoq-al-hawamer",
+    category: "zakat",
     price: "$55.000",
     image: i_thoq_al_hawamer_turbo_super_charge_edp_100ml,
     description: "Fragancia importada Zakat · 100ML. Lista de mayorista.",
@@ -5585,7 +5585,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_warda_rose_edp_100ml",
     name: "Warda Rose EDP 100ML",
-    category: "thoq-al-hawamer",
+    category: "zakat",
     price: "$48.000",
     image: i_thoq_al_hawamer_warda_rose_edp_100ml,
     description: "Fragancia importada Zakat · 100ML. Lista de mayorista.",
@@ -5605,7 +5605,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_z40_edp_100ml",
     name: "Z40 EDP 100ML",
-    category: "thoq-al-hawamer",
+    category: "zakat",
     price: "$58.000",
     image: i_thoq_al_hawamer_z40_edp_100ml,
     description: "Fragancia importada Zakat · 100ML. Lista de mayorista.",
@@ -5625,7 +5625,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_fatima_velvet_love_extrait_de_parfum_100ml",
     name: "Fatima Velvet Love Extrait De Parfum 100ML",
-    category: "thoq-al-hawamer",
+    category: "zimaya",
     price: "$49.000",
     image: i_thoq_al_hawamer_fatima_velvet_love_extrait_de_parfum_100ml,
     description: "Fragancia importada Zimaya · 100ML. Lista de mayorista.",
@@ -5635,7 +5635,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_hayam_edp_100ml",
     name: "Hayam EDP 100ML",
-    category: "thoq-al-hawamer",
+    category: "zimaya",
     price: "$49.000",
     image: i_thoq_al_hawamer_hayam_edp_100ml,
     description: "Fragancia importada Zimaya · 100ML. Lista de mayorista.",
@@ -5645,7 +5645,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "pv2_thoq_al_hawamer_sharaf_blend_extrait_de_parfum_100ml",
     name: "Sharaf Blend Extrait De Parfum 100ML",
-    category: "thoq-al-hawamer",
+    category: "zimaya",
     price: "$49.000",
     image: i_thoq_al_hawamer_sharaf_blend_extrait_de_parfum_100ml,
     description: "Fragancia importada Zimaya · 100ML. Lista de mayorista.",
