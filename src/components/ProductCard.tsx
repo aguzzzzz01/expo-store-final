@@ -95,23 +95,23 @@ export function ProductCard({ product }: { product: Product }) {
 
       {/* Image */}
       <div
-        className="relative aspect-square rounded-xl overflow-hidden mb-4 border border-border/20 bg-black/10"
+        className="relative aspect-square rounded-xl overflow-hidden mb-4 border border-border/20"
       >
-        {/* Blurred background fill: same image scaled up + blurred so the square has no empty space */}
-        <img
-          src={displayImage}
-          alt=""
+        {/* Unified premium gradient backdrop (gold/dark) — same look across all products */}
+        <div
           aria-hidden="true"
-          loading="lazy"
-          decoding="async"
-          referrerPolicy="no-referrer"
-          className="absolute inset-0 h-full w-full object-cover scale-125 blur-2xl opacity-70"
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse at 30% 20%, oklch(0.32 0.10 88 / 0.55), transparent 60%), radial-gradient(ellipse at 70% 90%, oklch(0.82 0.16 88 / 0.18), transparent 65%), linear-gradient(160deg, oklch(0.16 0.02 80) 0%, oklch(0.07 0 0) 100%)",
+          }}
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-[8%] h-3 w-3/5 rounded-[50%] bg-black/40 blur-md"
         />
         {isPerfume && (
-          <>
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-amber-100/20 via-transparent to-black/20" />
-            <div className="pointer-events-none absolute left-1/2 -translate-x-1/2 bottom-[10%] h-3 w-3/5 rounded-[50%] bg-black/25 blur-md" />
-          </>
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-amber-100/15 via-transparent to-black/25" />
         )}
         <img
           key={displayImage}
