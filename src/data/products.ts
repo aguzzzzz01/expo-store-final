@@ -981,7 +981,7 @@ export const PRODUCTS: Product[] = [
     id: "remera_arg_afa",
     name: "Camiseta de la Selección Argentina (3 Estrellas)",
     category: "indumentaria",
-    price: "$35.000",
+    price: "$29.900",
     image: pArgShirt,
     description:
       "La pasión de las tres estrellas en tus manos. Camiseta de la Selección Argentina con escudo de la AFA bordado en relieve de alta definición, calce oficial con parche de Campeón de Mundo de la FIFA 2022. Disponibles para encargos tanto por menor como por mayor con la mejor calidad del mercado. ¡Reservá la tuya con tiempo!",
