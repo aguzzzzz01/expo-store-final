@@ -86,6 +86,10 @@ export function ProductCard({ product }: { product: Product }) {
       viewport={{ once: true, margin: "100px" }}
       transition={{ duration: 0.3 }}
       className="group relative flex flex-col rounded-2xl border border-border/80 bg-card/60 p-4 hover:border-gold/50 transition-colors duration-300 overflow-hidden shadow-sm"
+      style={{
+        contentVisibility: "auto",
+        containIntrinsicSize: "560px 420px",
+      } as React.CSSProperties}
     >
       {displayTag && (
         <div className="absolute top-4 right-4 z-10 px-2.5 py-1 rounded-full text-[9px] font-black tracking-widest bg-gold text-primary-foreground shadow-sm">
@@ -121,6 +125,13 @@ export function ProductCard({ product }: { product: Product }) {
           decoding="async"
           referrerPolicy="no-referrer"
           className="relative h-full w-full object-contain p-3 drop-shadow-[0_8px_12px_rgba(0,0,0,0.25)] transition-transform duration-500 group-hover:scale-105"
+          onError={(e) => {
+            const img = e.currentTarget;
+            if (!img.dataset.fallback) {
+              img.dataset.fallback = "1";
+              img.style.opacity = "0";
+            }
+          }}
         />
       </div>
 
