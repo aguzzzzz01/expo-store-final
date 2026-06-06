@@ -1,7 +1,6 @@
 import { useMemo, useState } from "react";
 import { MessageCircle, ChevronDown, ChevronUp, Info, ShoppingCart, Check } from "lucide-react";
 import { Product, ProductModel } from "@/data/products";
-import { motion } from "motion/react";
 import { useCart } from "@/contexts/CartContext";
 
 const WHATSAPP_NUMBER = "5491138012403";
