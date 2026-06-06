@@ -1,7 +1,6 @@
 import { useMemo, useState } from "react";
 import { MessageCircle, ChevronDown, ChevronUp, Info, ShoppingCart, Check } from "lucide-react";
 import { Product, ProductModel } from "@/data/products";
-import { motion } from "motion/react";
 import { useCart } from "@/contexts/CartContext";
 
 const WHATSAPP_NUMBER = "5491138012403";
@@ -80,11 +79,7 @@ export function ProductCard({ product }: { product: Product }) {
   const isPerfume = PERFUME_CATEGORIES.has(product.category as string);
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 12 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "100px" }}
-      transition={{ duration: 0.3 }}
+    <div
       className="group relative flex flex-col rounded-2xl border border-border/80 bg-card/60 p-4 hover:border-gold/50 transition-colors duration-300 overflow-hidden shadow-sm"
       style={{
         contentVisibility: "auto",
@@ -142,17 +137,13 @@ export function ProductCard({ product }: { product: Product }) {
         </h3>
 
         <div className="mt-2 text-xs">
-          <motion.div
-            animate={{ height: isExpanded ? "auto" : "2.6rem" }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="overflow-hidden relative"
-          >
+          <div className="overflow-hidden relative">
             <p
               className={`text-muted-foreground/90 leading-relaxed font-normal ${!isExpanded ? "line-clamp-2" : ""}`}
             >
               {displayDesc}
             </p>
-          </motion.div>
+          </div>
 
           <button
             type="button"
@@ -415,6 +406,6 @@ export function ProductCard({ product }: { product: Product }) {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
