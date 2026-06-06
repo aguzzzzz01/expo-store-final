@@ -989,7 +989,7 @@ export const PRODUCTS: Product[] = [
     options: [
       {
         spec: "Talles Disponibles (S al XXL) - Por Menor / Mayor",
-        price: "$35.000",
+        price: "$29.900",
       },
     ],
   },
