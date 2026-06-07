@@ -648,16 +648,6 @@ export interface Product {
 
 export const PRODUCTS: Product[] = [
   {
-    id: "1",
-    name: "Bade'e Al Oud Amethyst",
-    category: "lattafa",
-    price: "$55.000",
-    image: pBadeOud,
-    description:
-      "Mística fragancia árabe de Lattafa. Notas ricas de rosa búlgara, vainilla de Madagascar, ámbar y pachulí. Presentación 100ML.",
-    tag: "Destacado",
-  },
-  {
     id: "2",
     name: "Oil Capilar Karseell Maca Essence",
     category: "karssell",
