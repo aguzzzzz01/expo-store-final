@@ -1,2 +1,4 @@
-// wrangler.jsonc
-"name": "expo-store-final",
+{
+  "name": "expo-store-final",
+  "compatibility_date": "2026-06-07"
+}
