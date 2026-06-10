@@ -1,21 +1,13 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import { TanStackRouterVite } from "@tanstack/router-vite-plugin";
-import path from "path";
+import { defineConfig } from "vinyl"; // Vite infiere el tipo automáticamente con TanStack Start
+import { defineConfig as defineStartConfig } from "@tanstack/start/config";
+import tsconfigPaths from "vite-tsconfig-paths";
 
-// https://vitejs.dev
-export default defineConfig({
-  plugins: [
-    react(),
-    TanStackRouterVite({
-      routesDirectory: "./src/routes",
-      generatedRouteTree: "./src/routeTree.gen.ts",
-    }),
-  ],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
+export default defineStartConfig({
+  vite: {
+    plugins: [
+      tsconfigPaths(),
+    ],
   },
 });
+
 
