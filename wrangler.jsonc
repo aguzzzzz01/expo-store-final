@@ -1,8 +1,4 @@
 {
   "name": "expo-store-final",
-  "compatibility_date": "2026-06-10",
-  "main": "src/routes/index.tsx",
-  "assets": {
-    "directory": "./dist"
-  }
+  "compatibility_date": "2026-06-10"
 }
