@@ -1,16 +1,17 @@
 import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig as defineStartConfig } from "@tanstack/start/config";
 import tsconfigPaths from "vite-tsconfig-paths";
+import { TanStackRouterVite } from "@tanstack/router-vite-plugin";
 
-export default defineConfig({
-  plugins: [
-    react(),
-    tsconfigPaths()
-  ],
-  build: {
-    rollupOptions: {
-      // Trata el módulo como externo para que no rompa la compilación del navegador
-      external: ["node:async_hooks"]
-    }
-  }
+export default defineStartConfig({
+  vite: {
+    plugins: [
+      tsconfigPaths(),
+      TanStackRouterVite({
+        routesDirectory: "./src/routes",
+        generatedRouteTree: "./src/routeTree.gen.ts",
+      })
+    ],
+  },
 });
+
