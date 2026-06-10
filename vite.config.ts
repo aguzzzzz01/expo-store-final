@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tsconfigPaths from "vite-tsconfig-paths";
+import path from "path";
 
 export default defineConfig({
   plugins: [
@@ -9,8 +10,8 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      // Reemplaza el módulo problemático por un objeto vacío nativo
-      "node:async_hooks": "{}",
+      // Apunta directamente al archivo vacío que creaste
+      "node:async_hooks": path.resolve(__dirname, "vacio.js")
     }
   }
 });
