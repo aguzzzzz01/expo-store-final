@@ -1,5 +1,8 @@
-// Ejemplo en wrangler.jsonc
 {
   "name": "expo-store-final",
-  "main": "src/server.js" // <-- Asegúrate de que esta ruta sea la de TU código, no el index por defecto
+  "main": "src/index.ts", // <-- Este archivo DEBE existir y tener un 'export default'
+  "assets": {
+    "directory": "./dist"
+  }
 }
+
