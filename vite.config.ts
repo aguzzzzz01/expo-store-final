@@ -9,8 +9,9 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      // Usa un truco nativo de Vite para simular un módulo vacío sin errores
-      "node:async_hooks": "\0browser-external"
+      // Reemplaza el módulo problemático por un objeto vacío nativo
+      "node:async_hooks": "{}",
     }
   }
 });
+
