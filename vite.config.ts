@@ -1,13 +1,12 @@
-import { defineConfig } from "vinyl"; // Vite infiere el tipo automáticamente con TanStack Start
-import { defineConfig as defineStartConfig } from "@tanstack/start/config";
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 import tsconfigPaths from "vite-tsconfig-paths";
 
-export default defineStartConfig({
-  vite: {
-    plugins: [
-      tsconfigPaths(),
-    ],
-  },
+// https://vitejs.dev
+export default defineConfig({
+  plugins: [
+    react(),
+    tsconfigPaths()
+  ],
 });
-
 
