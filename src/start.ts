@@ -1,3 +1,4 @@
+console.log("start cargado")
 // @ts-ignore
 globalThis.AsyncLocalStorage = class { disable() {} enable() {} enterWith() {} run() {} getStore() {} };
 import { createStart, createMiddleware } from "@tanstack/react-start";
