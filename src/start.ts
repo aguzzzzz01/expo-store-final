@@ -1,3 +1,5 @@
+// @ts-ignore
+globalThis.AsyncLocalStorage = class { disable() {} enable() {} enterWith() {} run() {} getStore() {} };
 import { createStart, createMiddleware } from "@tanstack/react-start";
 
 import { renderErrorPage } from "./lib/error-page";
