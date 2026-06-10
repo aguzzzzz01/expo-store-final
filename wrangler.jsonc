@@ -1,5 +1,6 @@
 {
   "name": "expo-store-final",
+  "compability_date": "2026-06-10",
   "main": "src/routes/index.tsx", // <-- Este archivo DEBE existir y tener un 'export default'
   "assets": {
     "directory": "./dist"
