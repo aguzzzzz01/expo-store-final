@@ -1,18 +1,16 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tsconfigPaths from "vite-tsconfig-paths";
-import path from "path";
 
 export default defineConfig({
   plugins: [
     react(),
     tsconfigPaths()
   ],
-  resolve: {
-    alias: {
-      // Apunta directamente al archivo vacío que creaste
-      "node:async_hooks": path.resolve(__dirname, "vacio.js")
+  build: {
+    rollupOptions: {
+      // Trata el módulo como externo para que no rompa la compilación del navegador
+      external: ["node:async_hooks"]
     }
   }
 });
-
