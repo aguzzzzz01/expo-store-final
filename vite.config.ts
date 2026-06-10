@@ -9,8 +9,8 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      // Engaña a TanStack dándole un objeto vacío nativo en lugar de romper el build
-      "node:async_hooks": "path-browserify"
+      // Usa un truco nativo de Vite para simular un módulo vacío sin errores
+      "node:async_hooks": "\0browser-external"
     }
   }
 });
