@@ -1,9 +1,11 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { TanStackRouterVite } from "@tanstack/router-plugin/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [
+    TanStackRouterVite(),
     react(),
     tsconfigPaths(),
     {
@@ -16,9 +18,17 @@ export default defineConfig({
       },
       load(id) {
         if (id === "\0node:async_hooks") {
-          return `export class AsyncLocalStorage { disable() {} enable() {} enterWith() {} run() {} getStore() {} };`;
+          return `
+            export class AsyncLocalStorage {
+              disable() {}
+              enable() {}
+              enterWith() {}
+              run() {}
+              getStore() {}
+            };
+          `;
         }
-      }
-    }
-  ]
+      },
+    },
+  ],
 });
