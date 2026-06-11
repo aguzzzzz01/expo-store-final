@@ -377,35 +377,6 @@ function Home() {
               perfumería árabe original, iPhones sellados con garantía Apple y lo último en estética
               capilar profesional.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3.5">
-              <motion.a
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.98 }}
-                href="#catalogo"
-                className="group inline-flex items-center gap-2 rounded-full bg-gradient-gold px-6 py-3 text-sm font-black uppercase tracking-wider text-primary-foreground shadow-glow shadow-gold/10 hover:shadow-gold/30 transition-all duration-300"
-              >
-                Explorar catálogo{" "}
-                <ArrowRight className="size-4 group-hover:translate-x-1 transition" />
-              </motion.a>
-              <div className="mt-8 flex flex-wrap gap-3.5">
-  <motion.a
-    href={waLink("Consulta general desde el banner")}
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <MessageCircle className="size-4 text-gold" />
-    WhatsApp
-  </motion.a>
-
-  <motion.a
-    href="https://www.whatsapp.com/channel/0029VbASD0s2UPBF6mkysO2S"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <MessageCircle className="size-4 animate-pulse" />
-    Canal de Whatsapp
-  </motion.a>
-</div>
               </motion.a>
             </div>
             <div className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-[11px] text-muted-foreground/80 font-bold tracking-wide uppercase">
